@@ -5,7 +5,7 @@ export default async function decorate(block) {
   quoteDiv.replaceWith(element);
 
   const authorDiv = block.querySelector(':scope > div:nth-of-type(2) > div');
-  if(authorDiv) {
+  if (authorDiv) {
     const authorElement = document.createElement('p');
     authorElement.innerHTML = `<strong><em>${authorDiv.innerHTML}</em></strong>`;
     authorDiv.replaceWith(authorElement);
